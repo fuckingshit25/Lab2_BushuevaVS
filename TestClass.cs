@@ -131,14 +131,14 @@ namespace Треугольники
         [TestMethod]
         public void CalculateTriangle_MinimumSideValues_ReturnsNotTriangleMessageAndEmptyVertices()
         {
-            string sideA = "0.1";
-            string sideB = "0.1";
-            string sideC = "0.1";
+            string sideA = "0,1";
+            string sideB = "0,1";
+            string sideC = "0,1";
             var result = calculator.CalculateTriangle(sideA, sideB, sideC);
-            Assert.AreEqual("Ошибка", result.Item1);
-            Assert.AreEqual((-2, -2), result.Item2[0]);
-            Assert.AreEqual((-2, -2), result.Item2[1]);
-            Assert.AreEqual((-2, -2), result.Item2[2]);
+            Assert.AreEqual("равносторонний", result.Item1);
+            Assert.AreEqual((0, 0), result.Item2[0]);
+            Assert.AreEqual((100, 0), result.Item2[1]);
+            Assert.AreEqual((49, 86), result.Item2[2]);
         }//9
 
         // Проверка на максимальное значение сторон треугольника

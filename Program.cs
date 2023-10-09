@@ -98,15 +98,6 @@ class Program
         string a="";
         string b="";
         string c="";
-        //// Инициализация калькулятора треугольников
-        //var triangleCalculator = new TriangleCalculator();
-        //Console.WriteLine("Сторона А:");
-        //a=Console.ReadLine();
-        //Console.WriteLine("Сторона B:");
-        //b=Console.ReadLine();
-        //Console.WriteLine("Сторона C:");
-        //c=Console.ReadLine();
-        //triangleCalculator.CalculateTriangle(a,b,c);
         var testClass = new TriangleCalculatorTests();
         testClass.Initialize();
         // Вызываем методы тестов
